@@ -1,19 +1,9 @@
-<link rel="stylesheet" href="../../public/css/registration.css">
+<form action="/registration" method="POST" id="regForm">
 <div class="cont">
   <div class="form sign-in">
-    <h2>Войти</h2>
-    <label>
-      <span>Email</span>
-      <input type="email" />
-    </label>
-    <label>
-      <span>пароль</span>
-      <input type="password" />
-    </label>
-    <button type="button" class="submit">войти</button>
     
   </div>
-  <div class="sub-cont">
+  {{!-- <div class="sub-cont">
     <div class="img">
       <div class="img__text m--up">
         <h2>реганёмся</h2>
@@ -22,30 +12,30 @@
         <h2>зайдешь?</h2>
       </div>
       <div class="img__btn">
-        <span class="m--up">зерегистрироваться</span>
-        <span class="m--in">зайдёшь?</span>
+        <span class="m--up" href="/registration">реганёмся</span>
+        <span class="m--in" href="/log">зайдёшь?</span>
       </div>
-    </div>
+    </div> --}}
     <div class="form sign-up">
       <h2>регистрация</h2>
       <label>
         <span>Имя</span>
-        <input type="text" />
+        <input type="nickname" id="nickname" name="nickname"/>
       </label>
       <label>
         <span>Email</span>
-        <input type="email" />
+        <input type="mail" id="mail" name="mail"/>
       </label>
       <label>
         <span>пароль</span>
-        <input type="password" />
+        <input type="password" id="password" name="password" pattern="(?=.*[a-z]).{5,}" />
       </label>
-      <button type="button" class="submit">зарегистрироваться</button>
+      <button type="submit" class="submit">зарегистрироваться</button>
      
     </div>
   </div>
 </div>
-
+</form>
 {{!-- <a href="https://dribbble.com/shots/3306190-Login-Registration-form" target="_blank" class="icon-link">
   <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
 </a> --}}
