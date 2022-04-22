@@ -5,15 +5,18 @@
   <a href="/log">Выйти</a>
 </p>
 
-<form>
-  <h3>{{themes}} </h3>
-  <div class="quest">{{quest}} </div>
-  <div>
-    <input name="answer" type="text" placeholder="Введи ответ">
-  </div>
-  <div>
-    <button>Дальше</button>
-    
-  </div>
+<script defer src="/js/qa.js"></script>
+<div id="id" data-user={{userId}} data-topic={{topicId}}></div>
 
+{{!-- <div class="mb-3">
+  <label id="q" for="a" class="form-label"></label>
+  <input type="text" class="form-control" id="a">
+  <label id="check" class="form-label m-3"></label>
+</div>
+<button type="submit" class="btn btn-primary">Try</button> --}}
+
+<form action="/session/{{userId}}/{{topicId}}" method="post" id="form">
+  <p id="quest">{{quest}}</p>
+  <input type="text" name="answer" placeholder="Твой ответ">
+  <button>Далее</button>
 </form>

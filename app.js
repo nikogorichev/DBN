@@ -13,7 +13,7 @@ config(app);
 
 app.use('/', mainRout);
 app.use('/themes', themesRout);
-app.use('/game', questRout);
+app.use('/session', questRout);
 
 
 app.listen(PORT, () => console.log(`8===э Server started at ${PORT} port ****`));
