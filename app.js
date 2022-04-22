@@ -5,7 +5,7 @@ const themesRout = require('./routes/themes.route');
 const questRout = require('./routes/question.route');
 
 const app = express();
-const PORT = process.env.PORT ?? 8080;
+const PORT = process.env.PORT ?? 3000;
 
 config(app);
 
