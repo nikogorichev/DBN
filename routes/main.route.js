@@ -75,7 +75,8 @@ router
     }
   });
 
-// ексит
+
+// екси-т
 router.get('/logout', (req, res) => {
   res.redirect('/');
 });
