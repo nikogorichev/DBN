@@ -1,6 +1,7 @@
 <h1>Выбери тему</h1>
 <ul>
   {{#each topics}}
-  <li><a href="/session/{{id}}/{{../userId}}">{{title}}</a></li>
+  <li><a href="/session/{{../userId}}/{{id}}">{{title}}</a></li>
   {{/each}}
 </ul>
+
