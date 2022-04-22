@@ -73,7 +73,7 @@ console.log(req.body);
       });
       res.redirect('/log')
     } catch (err) {
-      res.send('ВЕРНИСЬ и напиши правильно Email, будь внимательней !');
+    console.log('mail писать не умеешь ?!');
     }
   });
 
