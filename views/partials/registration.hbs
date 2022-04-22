@@ -1,41 +1,35 @@
-<form action="/registration" method="POST" id="regForm">
-<div class="cont">
-  <div class="form sign-in">
-    
+<div class="mainrega">
+<form action="/registration" method="POST" id="regform">
+     <div class="mb-3">
+    <label for="login" class="form-label">Логин</label>
+    <input type="login" id="login" name="login" autocomplete='off' required>
   </div>
-  {{!-- <div class="sub-cont">
-    <div class="img">
-      <div class="img__text m--up">
-        <h2>реганёмся</h2>
-      </div>
-      <div class="img__text m--in">
-        <h2>зайдешь?</h2>
-      </div>
-      <div class="img__btn">
-        <span class="m--up" href="/registration">реганёмся</span>
-        <span class="m--in" href="/log">зайдёшь?</span>
-      </div>
-    </div> --}}
-    <div class="form sign-up">
-      <h2>регистрация</h2>
-      <label>
-        <span>Имя</span>
-        <input type="nickname" id="nickname" name="nickname"/>
-      </label>
-      <label>
-        <span>Email</span>
-        <input type="mail" id="mail" name="mail"/>
-      </label>
-      <label>
-        <span>пароль</span>
-        <input type="password" id="password" name="password" pattern="(?=.*[a-z]).{5,}" />
-      </label>
-      <button type="submit" class="submit">зарегистрироваться</button>
-     
+   <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" id="email" name="email" autocomplete='off' required>
     </div>
+  <div class="mb-3">
+    <label for="pass" class="form-label">Пароль</label>
+    <input type="password" name="password" id="pass" pattern="(?=.*[a-z]).{5,}"
+      required>
+  </div>
+<div style="color:red">{{invalidForm}}</div>
+  <button type="submit" class="btn">Зарегестироваться</button>
+</form>
+
+<div id='regError'>
+
+</div>
+
+<div class="card" style="width: 18rem;">
+  
+  <div class="card-body">
+    <h5 class="card-title">Войти</h5>
+
+  </div>
+
+  <div class="card-body">
+    <a href="/log" class="cardLink">Войти</a>
   </div>
 </div>
-</form>
-{{!-- <a href="https://dribbble.com/shots/3306190-Login-Registration-form" target="_blank" class="icon-link">
-  <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
-</a> --}}
+</div>

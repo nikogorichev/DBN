@@ -9,13 +9,17 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       id_theme: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model:'Themes',
+          key: 'id',
+        }
       },
       quest: {
-        type: Sequelize.INTEGER
+        type: Sequelize.TEXT
       },
       answer: {
-        type: Sequelize.INTEGER
+        type: Sequelize.TEXT
       },
       createdAt: {
         allowNull: false,
