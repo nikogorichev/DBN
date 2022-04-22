@@ -9,10 +9,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       id_user: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model: 'Users',
+          key: 'id',
+        }
       },
       id_theme: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model: 'Themes',
+          key: 'id',
+        }
       },
       score: {
         type: Sequelize.INTEGER
