@@ -29,6 +29,7 @@ router
           email,
         },
       });
+      res.redirect(`/themes/${user.id}`)
       if (!user) {
         return res.render('partials/log', {
           invalidEmail: 'ошибочка',
@@ -62,7 +63,7 @@ console.log(req.body);
       });
       if (userUniq) {
         return res.render('registration', {
-          invalidForm: 'систему не одурачить',
+          invalidForm: 'ИНВАЛИДКА НАШЕ всё)',
         });
       }
 
