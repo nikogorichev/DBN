@@ -1,0 +1,107 @@
+#regform {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  display: center;
+  text-align: center;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  position: relative;
+  width: 640px;
+  height: 100%;
+  padding: 50px 30px 0;
+}
+#loginform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: center;
+  text-align: center;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  position: relative;
+  height: 100%;
+  padding: 50px 30px 0;
+}
+#addForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+input {
+    border: none;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+ .btn {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: #d4af7a;
+  text-transform: uppercase;
+ }
+
+.mainrega {
+  position: relative;
+  width: 900px;
+  height: 550px;
+  margin: 0 auto 100px;
+  background: #fff;
+}
+.mainlog {
+  position: relative;
+  width: 900px;
+  height: 550px;
+  margin: 0 auto 100px;
+  background: #fff;
+}
+ 
+.card {
+  background-image: url("https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: auto;
+    position: absolute;
+    left: 640px;
+    top: 0;
+    height: 100%;
+    padding-left: 260px;
+}
+
+.cardLog {
+  background-image: url("https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: auto;
+    position: absolute;
+    /* left: 640px; */
+    top: 0;
+    height: 100%;
+    padding-left: 260px;
+}
+
+.card-body a {
+  width: 100px;
+  height: 38px;
+  margin: 0 auto;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  /* left: 98px; */
+  top: 400px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.card-body {
+  width: 100px;
+    height: 38px;
+    margin: 0 auto;
+    left: 98px;
+    position: absolute;
+}
