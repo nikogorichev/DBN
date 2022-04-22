@@ -64,6 +64,12 @@ router
           invalidForm: 'систему не одурачить',
         });
       }
+
+      const user = await User.create({
+        login,
+        email,
+        password,
+      });
     } catch (err) {
       console.log(err);
     }
@@ -75,3 +81,5 @@ router.get('/logout', (req, res) => {
 });
 
 module.exports = router;
+
+
