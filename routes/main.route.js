@@ -66,8 +66,8 @@ router
       }
 
       const user = await User.create({
-        login,
-        email,
+       nickname: login,
+       mail: email,
         password,
       });
     } catch (err) {
