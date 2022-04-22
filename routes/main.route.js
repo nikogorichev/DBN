@@ -21,6 +21,7 @@ router
       email,
       password,
     } = req.body;
+
     // проверочка подкатила на юзера в бд
     try {
       const user = await User.findOne({
@@ -51,7 +52,7 @@ router
       email,
       password,
     } = req.body;
-
+console.log(req.body);
     // функция для проверки уникальности юзера
     try {
       const userUniq = await User.findOne({
@@ -65,13 +66,14 @@ router
         });
       }
 
-      const user = await User.create({
-        login,
-        email,
-        password,
+      await User.create({
+       login,
+       email,
+      password,
       });
+      res.redirect('/log')
     } catch (err) {
-      console.log(err);
+      res.send('ВЕРНИСЬ и напиши правильно Email, будь внимательней !');
     }
   });
 
