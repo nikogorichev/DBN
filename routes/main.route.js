@@ -64,14 +64,23 @@ router
           invalidForm: 'систему не одурачить',
         });
       }
+
+      const user = await User.create({
+        login,
+        email,
+        password,
+      });
     } catch (err) {
       console.log(err);
     }
   });
 
-// ексит
+
+// екси-т
 router.get('/logout', (req, res) => {
   res.redirect('/');
 });
 
 module.exports = router;
+
+
