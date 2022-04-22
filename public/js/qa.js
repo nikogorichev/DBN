@@ -1,9 +1,11 @@
 const form = document.querySelector('#form');
 const quest = document.querySelector('#quest');
-const count = 0
+let count = 0
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault()
+ 
+  count += 1
   const {method, action, answer} = event.target
   const response = await fetch(action, {
     method,
@@ -13,8 +15,9 @@ form.addEventListener('submit', async (event) => {
     })
   })
 
+
   const data = await response.json();
-  quest.innerHTML = data[0].quest;
+  quest.innerHTML = data[count -1].quest;
 })
 
 
