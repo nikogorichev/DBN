@@ -75,12 +75,12 @@ input {
 .cardLog {
   background-image: url("https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: absolute;
     position: absolute;
     /* left: 640px; */
     top: 0;
     height: 100%;
-    padding-left: 260px;
+    /* padding-left: 260px; */
 }
 
 .card-body a {
