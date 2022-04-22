@@ -6,13 +6,13 @@ router.get('/:id', (req, res) => {
   res.render('questions');
 });
 
-router.get('/questions/:id', async (req, res) => {
+router.get('/session/:id', async (req, res) => {
   const questionsArr = await Question.findAll({
     raw: true,
     where: { id_theme: req.params.id },
     attributes: ['quest', 'answer', 'id'],
   });
-  res.send({ questionsArr });
+  res.render('questions', { themes: questionsArr.id, quest: questionsArr.quest });
 });
 
 module.exports = router;
