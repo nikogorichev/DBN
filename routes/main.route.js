@@ -73,7 +73,7 @@ console.log(req.body);
       });
       res.redirect('/log')
     } catch (err) {
-    console.log('mail писать не умеешь ?!');
+      console.log(err);
     }
   });
 
