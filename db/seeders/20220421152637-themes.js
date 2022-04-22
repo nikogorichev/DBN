@@ -15,7 +15,7 @@ module.exports = {
     */
 
 
-    let themeQ = await fs.readFile(path.join(process.env.PWD, 'themeQA','them.txt'),'utf-8');
+    let themeQ = await fs.readFile(path.join(process.env.PWD, 'themeQA','themQ.txt'),'utf-8');
  
     let themeQA = themeQ.split('\n').filter((el) => el.length > 1)
     

@@ -24,8 +24,15 @@ module.exports = {
      
 
      for(let i = 0; i < themeQA.length;i+=1){
+       if(themeQA[i] === 'Еда'){
+         themeQA[i] = 1
+       } else if (themeQA[i] === 'Путушествия'){
+         themeQA[i] = 2
+       } else {
+        themeQA[i] = 3
+       }
       await queryInterface.bulkInsert('Questions', [{
-        id_theme: themeQA[i][0],
+        id_theme: themeQA[i],
         quest: quesQA[i],
         answer: answQA[i],
         createdAt: new Date(),
